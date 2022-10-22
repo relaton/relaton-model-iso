@@ -1,15 +1,5 @@
 include "biblio-standoc.rnc" {
 
-documentnumber =
-  element project-number {
-    attribute part { xsd:int }?,
-    attribute subpart { xsd:int }?,
-    attribute amendment { xsd:int }?,
-    attribute corrigendum { xsd:int }?,
-    attribute origyr { ISO8601Date }?,
-    text
-   }
-
 BibDataExtensionType =
   attribute schema-version { text }?,
         doctype, docsubtype?, horizontal?, editorialgroup, approvalgroup?, ics*, structuredidentifier, stagename?, updates_document_type?
@@ -24,6 +14,12 @@ element to { ISO8601Date }?
 element on { ISO8601Date | "--" | "–" }
 )
 
+}
+
+organization =
+  element organization {
+    orgname+, abbreviation?, uri?, org-identifier*, contact*,
+    technical-committee?, subcommittee?, workgroup?, secretariat?
 }
 
 DocumentType =
@@ -60,6 +56,9 @@ documentnumber =
   element project-number {
     attribute part { xsd:int }?,
     attribute subpart { xsd:int }?,
+    attribute amendment { xsd:int }?,
+    attribute corrigendum { xsd:int }?,
+    attribute origyr { ISO8601Date }?,
     text
    }
 
