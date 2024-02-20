@@ -25,7 +25,7 @@ organization =
 DocumentType =
      "international-standard" | "technical-specification" |
      "technical-report" | "publicly-available-specification" |
-    "international-workshop-agreement" | "guide" |
+    "international-workshop-agreement" | "guide" | "recommendation" |
     "amendment" | "technical-corrigendum" | "directive" | "committee-document"
 
 DocumentSubtype = "specification" | "method-of-test" | "vocabulary" | "code-of-practice"
