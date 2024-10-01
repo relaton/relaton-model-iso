@@ -26,7 +26,7 @@ DocumentType =
      "international-standard" | "technical-specification" |
      "technical-report" | "publicly-available-specification" |
     "international-workshop-agreement" | "guide" | "recommendation" |
-    "amendment" | "technical-corrigendum" | "directive" | "committee-document"
+    "amendment" | "technical-corrigendum" | "directive" | "committee-document" | "addendum"
 
 DocumentSubtype = "specification" | "method-of-test" | "vocabulary" | "code-of-practice"
 
