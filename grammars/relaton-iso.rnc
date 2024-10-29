@@ -2,7 +2,8 @@ include "biblio-standoc.rnc" {
 
 BibDataExtensionType =
   attribute schema-version { text }?,
-        doctype, docsubtype?, flavor, horizontal?, editorialgroup, approvalgroup?, ics*, structuredidentifier, stagename?, updates_document_type?, fast_track?
+        doctype, docsubtype?, flavor, horizontal?, editorialgroup, approvalgroup?, ics*, structuredidentifier, stagename?, 
+        updates_document_type?, fast_track?, price-code?
 
 bdate = element date {
   attribute type { ( BibliographicDateType | text ) },
@@ -82,3 +83,4 @@ stagename = element stagename {
 }
 
 fast_track = element fast-track { xsd:boolean }
+price-code = element price-code { text }
