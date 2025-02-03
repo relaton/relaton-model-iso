@@ -17,8 +17,7 @@ element on { ISO8601Date | "--" | "–" }
 
 }
 
-OrganizationType |=
-    technical-committee?, subcommittee?, workgroup?, secretariat?
+organization = element organization { OrganizationType | IsoOrganizationType }
 
 DocumentType =
      "international-standard" | "technical-specification" |
@@ -81,3 +80,6 @@ stagename = element stagename {
 
 fast_track = element fast-track { xsd:boolean }
 price-code = element price-code { text }
+
+IsoOrganizationType =
+    technical-committee?, subcommittee?, workgroup?, secretariat?
