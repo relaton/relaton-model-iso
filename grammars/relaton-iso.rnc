@@ -47,9 +47,6 @@ BibDataExtensionType &=
 
 updates_document_type = element updates-document-type { DocumentType }
 
-ISOProjectGroup =
-  agency*, technical-committee+, subcommittee*, workgroup*, secretariat?
-
 horizontal = element horizontal { xsd:boolean }
 
 documentnumber =
